@@ -2,9 +2,8 @@
 
 double LogarhitmicCooling::getNextTemperature()
 {
-	n++;
-	return startingTemperature / log( static_cast<double>(n));
+	return startingTemperature / log( static_cast<double>(++n));
 }
 
-LogarhitmicCooling::LogarhitmicCooling(double startingTemperature) :ICoolingFunction(startingTemperature), startingTemperature(startingTemperature), n(1)
+LogarhitmicCooling::LogarhitmicCooling(double startingTemperature) :ICoolingFunction(startingTemperature, 1), startingTemperature(startingTemperature)
 {}

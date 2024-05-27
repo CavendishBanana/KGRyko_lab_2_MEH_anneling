@@ -1,13 +1,13 @@
 #pragma once
 #include "ICoolingFunction.h"
-class GeometricCoolingFunction :
+class LinearCooling :
     public ICoolingFunction
 {
 private:
-    double alfa;
+    double alpha;
 
 public:
-    GeometricCoolingFunction(double alfa, double startTemperature);
+    LinearCooling(double startingTemperature, double alpha, unsigned int n= 0);
     double getNextTemperature() override;
 };
 

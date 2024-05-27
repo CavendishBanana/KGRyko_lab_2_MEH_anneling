@@ -7,9 +7,9 @@ class LogarhitmicCooling :
 
 private:
     double startingTemperature;
-    int n;
 public:
-    double getNextTemperature();
+    double getNextTemperature() override;
     LogarhitmicCooling(double startingTemperature);
+
 };
 

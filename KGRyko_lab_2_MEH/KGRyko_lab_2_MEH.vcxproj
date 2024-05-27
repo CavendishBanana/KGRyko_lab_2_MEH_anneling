@@ -24,6 +24,7 @@
     <ProjectGuid>{6fc5bc58-0a29-4f50-96f1-940aebc2593c}</ProjectGuid>
     <RootNamespace>KGRykolab2MEH</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>KGryko_lab_3_simulated_anneling</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,15 +128,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ContinueConditionMaxIters.cpp" />
     <ClCompile Include="GeometricCoolingFunction.cpp" />
+    <ClCompile Include="IContinueCondition.cpp" />
     <ClCompile Include="ICoolingFunction.cpp" />
-    <ClCompile Include="KGRyko_lab_2_MEH.cpp" />
+    <ClCompile Include="IRangeOperator.cpp" />
+    <ClCompile Include="KGRyko_lab_simulated_anneling.cpp" />
+    <ClCompile Include="LinearCooling.cpp" />
     <ClCompile Include="LogarhitmicCooling.cpp" />
+    <ClCompile Include="NormalRangeOperator.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ContinueConditionMaxIters.h" />
     <ClInclude Include="GeometricCoolingFunction.h" />
+    <ClInclude Include="IContinueCondition.h" />
     <ClInclude Include="ICoolingFunction.h" />
+    <ClInclude Include="IRangeOperator.h" />
+    <ClInclude Include="LinearCooling.h" />
     <ClInclude Include="LogarhitmicCooling.h" />
+    <ClInclude Include="NormalRangeOperator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
